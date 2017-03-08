@@ -1,0 +1,123 @@
+body{
+	padding: 0;
+	height: 100%;
+	font-size: 16px;
+	font-family: sans-serif;
+	background: #F2E1BB;
+}
+i{
+	font-style:normal;
+}
+/*head*/
+.head-top{
+	width: 100%;
+	height: 0.9rem;
+	background: #252424;
+	margin: 0 auto;
+	position: absolute;
+	top: 0;
+	text-align: justify;
+	padding-left: 0.18rem;
+	padding-right: 0.18rem;
+	box-sizing:border-box;
+	z-index: 20;
+}
+.head-top:after{
+	content: '';
+	display: inline-block;
+	width: 100%;
+}
+.head-top a{
+	display: inline-block;
+	text-align: center;
+}
+.y-return img{
+	width: 0.7rem;
+	height: 0.7rem;
+	margin-top: 0.1rem;
+}
+.y-cen span{
+	text-align: center;
+	color: #A8D655;
+	letter-spacing: 0.01rem;
+}
+.y-cen span .y-op1{
+	font-size: 14px;
+}
+.y-cen span .y-op2{
+	/* word-wrap: break-word;*/
+	font-size: 12px;
+}
+
+.y-set img{
+	width: 0.7rem;
+	height: 0.7rem;
+	margin-top: 0.12rem;
+
+}
+
+/*conntent*/
+.y-cont{
+	width: 100%;
+	position: relative;	
+}
+.y-son{
+	width: 100%;
+}
+.y-son .y-bphoto{
+	width: 100%;
+	display: block;
+}
+.y-sous{
+	width: 100%;
+	box-sizing:border-box;
+	text-align: center;
+	position: absolute;
+	bottom:3%;
+}
+.y-sous img{
+	width: 0.37rem;
+	height: 0.38rem;
+	vertical-align: middle;
+}
+.y-sous span{
+	font-size: 12px;
+}
+
+
+
+/*遮罩*/
+.y-zhez{
+	width: 100%;
+	height: 100%;
+	background: #000;
+	position: absolute;
+	top:0;
+	left:0;
+	z-index: 222;
+	opacity: 0.8;
+	overflow: hidden;
+}
+.y-zhez img{
+	width: 100%;
+	display: block;
+	/*height: 100%;*/
+}
+
+
+@media screen and (max-width: 370px){
+	.y-son .y-bphoto{
+		width: auto;
+		height: 475px;
+		display: block;
+		margin: 0.02rem auto;
+	}
+	.y-sous{
+		bottom: 0.2rem;
+	}
+	.y-zhez img{
+		display: block;
+		width: 100%;
+		margin: 0 auto;
+	}
+}
